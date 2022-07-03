@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content%}
+<h1>ABOUT SUJI BHAI?</h1>
+
+<p>Suji Bhai is a legend just like Rakky Bhai</p>
+
+<p>
+    {{ my_text }}, {{ bhai_number}}
+</p>
+
+<ul>
+    <li>Item 1</li>
+    <li>Item 1</li>
+</ul>
+
+<ul>
+
+{% for my_sub_item in my_list %}
+    <li>
+       {{forloop.counter}}-{{my_sub_item}}
+    </li>
+{% endfor %}
+</ul>
+
+{% endblock %}
